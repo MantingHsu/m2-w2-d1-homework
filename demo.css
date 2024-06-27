@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: url(images/central_park.jpg) center center no-repeat;  /* place image as background */
+  background-size: cover;  /* make the background image responsive */
+  height: 400px; /* give header some height to display the background image */
+  padding-top: 100px;
+  padding-left: 100px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff; /* Make sure the text color is white to stand out against the background */
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  padding: 0 20px;
+}
+
+li a {
+  text-decoration: none; /* Remove Underline */
+}
+
+li a:link {
+  color: #000; /* Before Click */
+}
+
+li a:visited {
+  color: #818db3; /* After Click */
+}
+
+li a:hover {
+  color: #333; /* Mouse Over */
+}
+
+li a:active {
+  color: #753a30; /* Mouse Down */
+}
+
+nav {
+  background-color: rgb(255, 245, 238);
+  height: 50px;
+  text-align: center;
+  padding-top: 2px;
+}
+
+main {
+  margin: 50px;
+}
+
+main h1 {
+  color: rgb(129, 141, 179);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  height: 40px;
+  background-color: rgb(129, 141, 179);
+  text-align: center;
+  padding-top: 20px;
+  color: rgb(211, 218, 240);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  min-width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+  }
+}
